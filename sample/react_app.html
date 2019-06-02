@@ -34,11 +34,14 @@
             return <p style={style}>{msg}</p>;
         }
 
+        let flg = false;
+
         let el = (
             <div>
-                {printMsg('最初のメッセージです。', 30, '#ddd')}
-                {printMsg('2番目のメッセージです。', 20, '#aaa')}
-                {printMsg('3番目のメッセージです。', 14, '#333')}
+                {
+                    flg && 
+                        <p style = {msg}>{message}</p>
+                }
             </div>
         );
 
